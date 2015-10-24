@@ -1379,7 +1379,7 @@ a.bg-primary:hover {
   background-color: white;
 }
 a.bg-success:hover {
-  background-color: #128f76;
+  background-color: #3275BB;
 }
 .bg-info {
   background-color: #3498db;
@@ -2564,14 +2564,14 @@ output {
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(44, 62, 80, 0.6);
 }
 .form-control::-moz-placeholder {
-  color: #acb6c0;
+  color: #8A929A;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #acb6c0;
+  color: #8A929A;
 }
 .form-control::-webkit-input-placeholder {
-  color: #acb6c0;
+  color: #8A929A;
 }
 .form-control[disabled],
 .form-control[readonly],
@@ -3139,7 +3139,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #ffffff;
-  background-color: #128f76;
+  background-color: #3275BB;
   border-color: #11866f;
 }
 .btn-success:active,
@@ -4523,11 +4523,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #128f76;
+  border-color: #3275BB;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #128f76;
+  background-color: #3275BB;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #ffffff;
@@ -4782,7 +4782,7 @@ a.label:focus {
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #128f76;
+  background-color: #3275BB;
 }
 .label-info {
   background-color: #3498db;

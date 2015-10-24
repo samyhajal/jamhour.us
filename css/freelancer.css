@@ -82,7 +82,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #ffe;
-    background: #18bc9c;
+    background: #3275BB;
 }
 
 header .container {
@@ -172,6 +172,9 @@ header .intro-text .skills {
 
     #logo-link {
         font-size: 1.3em;
+    }
+    .floating-label-form-group input{
+        font-size: 1.2em;
     }
 }
 
@@ -303,6 +306,10 @@ section.success a.active {
     #register h2 {
         font-size: 1.8em;
     }
+
+    .floating-label-form-group input{
+        font-size: 1.2em;
+    }
 }
 
 #committee {
@@ -381,9 +388,18 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #3275BB;
     background: #fff;
 }
+
+#country {
+    padding-top: 25px;
+}
+
+#register-button {
+    background-color: #3275BB;
+}
+
 
 .floating-label-form-group {
     position: relative;
@@ -400,7 +416,7 @@ section.success a.active {
     padding-left: 0;
     border: 0;
     border-radius: 0;
-    font-size: 1.5em;
+    font-size: 1.3em;
     background: 0 0;
     box-shadow: none!important;
     resize: none;
@@ -434,7 +450,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #3275BB;
 }
 
 form .row:first-child .floating-label-form-group {
