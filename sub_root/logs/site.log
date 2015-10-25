@@ -1,0 +1,36 @@
+
+2011-08-04 05:06:08  file(countries.txt): failed to open stream: No such file or directory--/Users/gareth/Sites/localhost/jam/site/objects/CC_Utility.class.php--64
+2011-08-04 05:06:47  file(/files/countries.txt): failed to open stream: No such file or directory--/Users/gareth/Sites/localhost/jam/site/objects/CC_Utility.class.php--64
+2011-08-04 06:12:48  Undefined index: residence--/Users/gareth/Sites/localhost/jam/site/pages/JoinUs.page.php--42
+2011-08-04 06:13:31  Undefined index: residence--/Users/gareth/Sites/localhost/jam/site/pages/JoinUs.page.php--42
+2011-08-04 06:13:33  Undefined index: residence--/Users/gareth/Sites/localhost/jam/site/pages/JoinUs.page.php--42
+2011-08-04 06:15:08  Undefined variable: cc--/Users/gareth/Sites/localhost/jam/site/pages/JoinUs.page.php--50
+2011-08-04 06:15:54  Undefined index: email_address--/Users/gareth/Sites/localhost/jam/site/objects/CC_Contact.class.php--235
+2011-08-04 06:16:14  Undefined index: email_address--/Users/gareth/Sites/localhost/jam/site/objects/CC_Contact.class.php--235
+2011-08-04 06:16:24  Undefined index: email_address--/Users/gareth/Sites/localhost/jam/site/objects/CC_Contact.class.php--235
+2011-08-04 06:17:45  Undefined index: email_address--/Users/gareth/Sites/localhost/jam/site/objects/CC_Contact.class.php--235
+2011-08-04 06:18:01  Undefined index: job_title--/Users/gareth/Sites/localhost/jam/site/objects/CC_Contact.class.php--240
+2011-08-04 06:19:47  Undefined index: status--/Users/gareth/Sites/localhost/jam/site/objects/CC_Contact.class.php--242
+2011-08-04 06:20:36  Undefined index: home_number--/Users/gareth/Sites/localhost/jam/site/objects/CC_Contact.class.php--247
+2011-08-04 06:20:57  Undefined index: lists--/Users/gareth/Sites/localhost/jam/site/objects/CC_Contact.class.php--268
+2011-08-04 06:43:01  Trying to get property of non-object--/Users/gareth/Sites/localhost/jam/site/objects/CC_List.class.php--27
+2011-08-04 06:43:35  Trying to get property of non-object--/Users/gareth/Sites/localhost/jam/site/objects/CC_List.class.php--27
+2011-08-04 06:43:49  Trying to get property of non-object--/Users/gareth/Sites/localhost/jam/site/objects/CC_List.class.php--27
+2011-08-04 07:03:59  Function eregi() is deprecated--/Users/gareth/Sites/localhost/jam/site/objects/CC_Utility.class.php--82
+2011-08-04 07:04:38  preg_match(): No ending delimiter '^' found--/Users/gareth/Sites/localhost/jam/site/objects/CC_Utility.class.php--82
+2011-08-04 08:20:59  Trying to get property of non-object--/Users/gareth/Sites/localhost/jam/site/objects/CC_List.class.php--27
+2011-08-04 08:23:59  Undefined index: error--/Users/gareth/Sites/localhost/jam/site/pages/JoinUs.page.php--14
+2011-08-04 08:34:36  Undefined index: residence--/Users/gareth/Sites/localhost/jam/site/pages/JoinUs.page.php--49
+2011-08-04 08:35:32  Undefined index: email_address--/Users/gareth/Sites/localhost/jam/site/pages/JoinUs.page.php--36
+2011-08-04 08:39:12  Undefined index: residence--/Users/gareth/Sites/localhost/jam/site/pages/JoinUs.page.php--49
+2011-08-04 10:26:08  Undefined index: email_address--/Users/gareth/Sites/localhost/jam/site/pages/JoinUs.page.php--36
+2011-08-05 01:13:58  Undefined index: email_address--/Users/gareth/Sites/localhost/jam/site/pages/Donate.page.php--37
+2011-11-15 08:26:10  Undefined variable: thumb--/homepages/5/d152126926/htdocs/Jamhour/pages/Missing.page.php--32
+2012-01-25 10:32:56  Array to string conversion--/homepages/5/d152126926/htdocs/Jamhour/objects/XTemplate.class.php--648
+2012-05-08 05:14:23  Undefined index:  EmailAddress--/homepages/5/d152126926/htdocs/Jamhour/pages/JoinUs.page.php--142
+2012-05-08 05:15:57  Undefined index:  EmailAddress--/homepages/5/d152126926/htdocs/Jamhour/pages/JoinUs.page.php--143
+2012-05-08 05:16:02  Undefined index:  EmailAddress--/homepages/5/d152126926/htdocs/Jamhour/pages/JoinUs.page.php--143
+2012-05-08 05:18:45  Cannot modify header information - headers already sent by (output started at /homepages/5/d152126926/htdocs/Jamhour/objects/CC_Utility.class.php:130)--/homepages/5/d152126926/htdocs/Jamhour/pages/JoinUs.page.php--143
+2012-05-08 05:35:28  Undefined index:  email_address--/homepages/5/d152126926/htdocs/Jamhour/pages/JoinUs.page.php--142
+2012-05-08 05:35:57  Undefined index:  email_address--/homepages/5/d152126926/htdocs/Jamhour/pages/JoinUs.page.php--142
+2012-05-08 05:36:45  Undefined index:  email_address--/homepages/5/d152126926/htdocs/Jamhour/pages/JoinUs.page.php--142

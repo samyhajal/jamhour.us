@@ -1,0 +1,70 @@
+#copy
+{
+	width: 874px;
+	height: 525px;
+	float: left;
+	display: inline-block;
+	font-size: 11px;
+	line-height: 15px;
+	overflow-y: auto;
+}
+#copy .event
+{
+	width: 636px;
+	border-top: 2px solid #F58220;
+	padding-top: 9px;
+	margin-bottom: 12px;
+}
+#copy .event_image
+{
+	width: 144px;
+	height: 100%;
+	float: left;
+	display: inline-block;
+}
+#copy .event_info
+{
+	float: left;
+	display: inline-block;
+	width: 492px;
+}
+#copy h1
+{
+	font-weight: bold;
+	color: #F58220;
+	letter-spacing: 1px;
+	line-height: 15px;
+	font-size: 11px;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+#copy h2
+{
+	line-height: 15px;
+	letter-spacing: .20px;
+	color: #F58220;
+	font-size: 11px;
+	padding: 1em 0 0 0;
+	margin: 0;
+	font-weight: normal;
+}
+
+#copy ul
+{
+	line-height: 15px;
+	letter-spacing: .20px;
+	padding: 0;
+	margin: 0;
+}
+
+#copy a
+{
+	color: #F58220;
+	font-style: italic;
+	text-decoration: none;
+}
+.highslide-caption {
+	text-align: center;
+}

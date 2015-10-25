@@ -1,0 +1,284 @@
+html, body
+{
+	padding: 0;
+	margin: 0;
+}
+
+#holder
+{
+	position: relative;
+	width: 1024px;
+	min-height: 768px;
+	margin: 0 auto;
+	font-family: arial, sans-serif;
+	font-size: 11px;
+	color: #00325b;
+}
+#top
+{
+	padding-bottom: 40px;
+}
+#top img
+{
+	border: none;
+}
+.menu a
+{
+	color: #f89838;
+	text-decoration: none;
+}
+
+.menu a:hover, .menu a.current
+{
+	color: #F58220;
+}
+#top_menu_holder
+{
+	position: relative;
+	height: 30px;
+}
+#top_menu
+{
+	position:absolute;
+	bottom: 0;
+	font-weight: bold;
+	font-size: 11px;
+	list-style: none;
+	letter-spacing: 1.2px;
+	padding: 0 0 0 138px;
+	margin: 0;
+}
+#top_menu > li
+{
+	display: inline-block;
+	float: left;
+}
+#top_menu > li > a
+{
+	display: block;
+	height: 30px;
+}
+#top_menu > li:hover ul.submenu, ul.current
+{
+	display: block;
+	visibility: visible;
+}
+#top_menu > li > a:hover
+{
+	background-position: -96px;
+}
+#btn_about
+{
+	background-image: url('/images/about_60_100.jpg');
+	width: 84px;
+}
+#btn_events
+{
+	background-image: url('/images/events_60_100.jpg');
+	width: 72px;
+}
+#btn_financials
+{
+	background-image: url('/images/financials_60_100.jpg');
+	width: 96px;
+}
+#btn_contact
+{
+	background-image: url('/images/contact_60_100.jpg');
+	width: 90px;
+}
+.submenu
+{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	display: none;
+	visibility: hidden;
+	font-size: 8px;
+	list-style: none;
+	height: 52px;
+	width: 108px;
+}
+#btn_past_events
+{
+	background-image: url('/images/past_events_60_100.jpg');
+	background-repeat: no-repeat;
+	width: 108px;
+}
+#btn_upcoming_events
+{
+	background-image: url('/images/upcoming_events_60_100.jpg');
+	background-repeat: no-repeat;
+	width: 108px;
+	height: 16px;
+}
+.submenu a
+{
+	padding-left: 10px;
+	display: block;
+	height: 26px;
+	height: 26px;
+}
+.submenu a:hover
+{
+	background-position: -108px;
+	background-repeat: no-repeat;
+}
+
+#middle
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+#left_menu_holder
+{
+	float: left;
+	width: 150px;
+}
+#left_menu
+{	
+	padding: 0;
+	margin: 0;
+	padding-left: 24px;
+	font-size: 11px;
+	line-height: 24px;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+}
+#content
+{
+	float: right;
+	width: 874px;
+	height: 100%;
+}
+.clear
+{
+	clear: both;
+	display: block;
+}
+#photo_gallery
+{
+	display: none;
+	visibility: hidden;
+}
+#photo_gallery img
+{
+	margin: 0;
+	padding: 0;
+}
+#photo_gallery img.margin_right
+{
+	margin-right: 1px;
+}
+#bottom
+{
+	position: absolute;
+	height: 18px;
+	bottom: 0;
+	width: 100%;
+	background: #F58220 url('../images/index_footer.jpg');
+	font-size: 10px;
+	color: #F9d237;
+	vertical-align: bottom;
+	text-align: left;
+}
+
+#bottom p
+{
+	padding: 0;
+	margin: 0 0 0 150px;
+	padding-right: 22px;
+	line-height: 18px;
+	letter-spacing: .4px;
+}
+#bottom p a
+{
+	color: #F9d237;
+	text-decoration: none;
+}
+#missing
+{
+	position: relative;
+	text-align: left;
+	font-size: 32px;
+	font-weight: bold;
+	color: #F58220;
+	height: 100%;
+	line-height: 1.5em;
+}
+
+#missing a
+{
+	color: #F58220;
+}
+
+#confirmation
+{
+	font-size: 12.5px;
+}
+#register_btn
+{
+	display: block;
+	width: 126px;
+	height: 27px;
+	background: url('../images/register_60.jpg');
+}
+#register_btn:hover
+{
+	background: url('../images/register_100.jpg');
+}
+#register_btn img
+{
+	visibility: hidden;
+}
+#donate_btn
+{
+	display: block;
+	width: 126px;
+	height: 27px;
+	background: url('../images/donate_60.jpg');
+}
+#donate_btn:hover
+{
+	background: url('../images/donate_100.jpg');
+}
+#donate_btn img
+{
+	visibility: hidden;
+}
+#join_btn
+{
+	display: block;
+	width: 126px;
+	height: 43px;
+	background: url('../images/join_60.jpg');
+}
+#join_btn:hover
+{
+	background: url('../images/join_100.jpg');
+}
+#join_btn img
+{
+	visibility: hidden;
+}
+#tell_btn
+{
+	display: block;
+	width: 126px;
+	height: 43px;
+	background: url('../images/send_60.jpg');
+}
+#tell_btn:hover
+{
+	background: url('../images/send_100.jpg');
+}
+#tell_btn img
+{
+	visibility: hidden;
+}
+
+.message
+{
+	font-size: 13px;
+}

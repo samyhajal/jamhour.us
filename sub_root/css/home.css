@@ -1,0 +1,100 @@
+#copy
+{
+	float: left;
+	color: #00325B;
+	font-size: 17.5px;
+	line-height: 30.5px;
+	letter-spacing: .03em;
+	width: 660px;
+}
+
+#copy p
+{
+	padding: 0 24px 1em 0;
+	margin: 0;
+}
+#copy p.quote
+{
+	font-family: georgia,serif;
+	color: #F58220;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 17px;
+}
+
+#side_info
+{
+	float: right;
+	width: 214px;
+}
+
+#event_holder 
+{
+	width: 188px;
+	border: 1px solid #F58220;
+}
+
+#event_holder_header
+{
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 26px;
+	font-weight: bold;
+	background: #F58220;
+	color: #FFFFFF;
+	text-align: center;
+}
+#event_holder .header
+{
+	padding: 0;
+	margin: 0;
+	font-size: 11px;
+	font-weight: bold;
+	color: #F58220;
+	letter-spacing: 1.5px;
+	line-height: 18px;
+	font-family: arial, sans-serif;
+}
+#event_holder p
+{
+	font-family: georgia,serif;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: .25px;
+	padding: 9px 0 0 10px;
+	margin: 0;
+}
+#side_info p.menu
+{
+	padding-left: 10px;
+	line-height: 25px;
+}
+#side_info a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#side_info p.menu a
+{
+	color: #F58220;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+}
+#side_info a.h1
+{
+	color: #F58220;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+	font-family: arial, sans-serif;
+}
+#photo_gallery
+{
+	position: absolute;
+	display: block;
+	visibility: visible;
+	bottom: 18px;
+}
+.orange
+{
+	color: #F58220;
+}

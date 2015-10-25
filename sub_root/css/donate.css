@@ -1,0 +1,126 @@
+#error_holder
+{
+	padding-left: 12px;
+	line-height: 18px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #F89838;
+}
+#error_holder a
+{
+	color: #F89838;
+}
+#error_holder a:link
+{
+	color: #F89838;
+}
+#error_holder a:visited
+{
+	color: #F89838;
+}
+#error_holder a:active
+{
+	color: #F89838;
+}
+#error_holder a:hover
+{
+	color: #F58220;
+}
+#donate_left
+{
+	width: 276px;
+	float: left;
+	display: inline-block;
+	background: #e3e7f0;
+	border-top: 2px solid #00325b;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: .15px;
+	height: 538px;
+}
+#donate_left h1
+{
+	padding: 0;
+	margin: 13px 0 0 7px;
+	font-size: 12px;
+	line-height: 10px;
+	font-weight: bold;
+}
+#donate_left_content
+{
+	padding: 0 8px 0 18px;
+}
+#donate_left_content input
+{
+	float: right;
+}
+#donate_left_content input#donate
+{
+	float: none;
+}
+tr, td
+{
+	padding: 0;
+	margin: 0;
+}
+select
+{
+	font-size: 12px;
+}
+
+#donate_right
+{
+	width: 551px;
+	float: left;
+	display: inline-block;
+	margin-left: 12px;
+}
+#donate_right .section td
+{
+	border-top: 2px solid #00325b;
+	font-weight: bold;
+}
+#donate_right input[type="text"]
+{
+	width: 100%;
+	height: 18px;
+	background: #e3e7f0;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+#donate_right table
+{
+	width: 100%;
+	font-size: 9.5px;
+	line-height: 18px;
+	letter-spacing: .15px;
+}
+#donate_right td div
+{
+	padding-right: 12px;
+}
+#donate_right #thanks
+{
+	font-size: 12px;
+	line-height: 18px;
+	color: #F58220;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.col_1
+{
+	width: 216px;
+}
+
+.col_2
+{
+	width: 216px;
+}
+
+.donate_small
+{
+	font-size: 9px;
+}

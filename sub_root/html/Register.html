@@ -1,0 +1,531 @@
+<!-- BEGIN: MAIN -->
+<div id="error_holder">
+	{ERROR_MESSAGE}
+</div>
+<form action="{SITE_ROOT}Register/Process/" method="post" id="frm_registration">
+	<div id="registration_left">
+		<h1>Number of tickets</h1>
+		<div id="registration_left_content">
+			<br />
+			<div class="ticket_holder">
+				$250<input type="text" name="individual_tix" id="individual_tix" class="ticket" value="0" />
+			</div>
+			Jamhour Alumni <br />
+			Alumni and Friends
+			<input type="hidden" id="individual_tix_val" value="250" />
+			<br />
+			<br />
+			<div class="ticket_holder">
+				$150<input type="text" name="senior_tix" id="senior_tix" class="ticket" value="0" />
+			</div>
+
+			Jamhour Alumni <br />
+			Alumni 2005 to 2015
+			<input type="hidden" id="senior_tix_val" value="150" />
+			<br />
+			<br />
+			<div class="ticket_holder">
+				$75<input type="text" name="student_tix" id="student_tix" class="ticket" value="0" />
+			</div>
+			Student
+			<input type="hidden" id="student_tix_val" value="75" />
+			<br />
+			<br />
+			<span class="total">Total&nbsp;&nbsp;&nbsp;&nbsp;$</span>
+			<input type="text" value="0" name="amount" id="total" disabled="disabled" />
+			<br />
+			<br />
+			<select id="payment_method">
+					<option value="0">Please select a payment option</option>
+					<option value="1">PayPal</option>
+					<option value="2">By Check</option>
+				</select>
+			<br />
+			<p>
+				Acknowledgement letters will be <br />
+				mailed out following the conference. <br />
+				For tax purposes, kindly indicate <br />
+				the individual or organization <br />
+				responsible for the donation.
+			</p>
+			<label for="individual">Click here to indicate an individual</label>
+			<input type="radio" name="custom_fields[7]" id="individual" value="Individual" checked="checked" />
+			<br />
+			<br />
+			<label for="organization">Click here to indicate an organization</label>
+			<input type="radio" name="custom_fields[7]" id="organization" value="Organization" />
+			<br />
+			<br />
+			<input type="image" src="{IMAGE_PATH}button_register.gif" alt="Register" title="Register" id="register" />
+			<div id="donate_redir">
+				<br />
+				I will not be able to attend but but wish to <br /><br />
+				make a contribution. <a href="{SITE_ROOT}Donate/" target="_self">(Please click here.)</a>
+			</div>
+		</div>
+	</div>
+	<div id="registration_right">
+		<table cellpadding="0" cellspacing="0">
+			<tr class="section">
+				<td colspan="3">
+					Your details
+					<br />
+				</td>
+			</tr>
+			<tr>
+				<td class="col_1">
+					<div>
+						<label for="last_name">Last name*</label><br />
+						<input type="text" name="last_name" id="last_name" maxlength="50" class="required" />
+					</div>
+				</td>
+				<td class="col_2">
+					<div>
+						<label for="first_name">First name*</label><br />
+						<input  type="text" name="first_name" id="first_name" maxlength="50" class="required" />
+					</div>
+				</td>
+				<td>
+					<label for="middle_initial">Middle initial</label><br />
+					<input  type="text" name="middle_name" id="middle_initial" maxlength="1" />
+				</td>
+			</tr>
+			<tr>
+				<td class="col_1">
+					<div>
+						<label for="class">Class of (incl. school if not NDJ)</label><br />
+						<input type="text" name="custom_fields[2]" id="class" maxlength="50" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="organization">Organization (if applicable)</label><br />
+					<input type="text" name="company_name" id="organization" maxlength="50" />
+				</td>
+			</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2">
+					<label for="address">Address*</label>
+				</td>
+				<td>
+					Please specify: <label for="home">Home</label>
+					<input type="radio" name="residence" value="0" id="home" checked="checked" />
+				</td>
+				<td>
+					<label for="office">Office</label>
+					<input type="radio" name="residence" value="1" id="office" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<input type="text" name="address_line_1" id="address" maxlength="50" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div>
+						<label for="city">City*</label><br />
+						<input type="text" name="city_name" id="city" maxlength="50" class="required" />
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="state">State*</label><br />
+						<input type="text" name="state_code" id="state" maxlength="2" class="required" />
+					</div>
+				</td>
+				<td>
+					<label for="zip">Zip*</label><br />
+					<input type="text" name="zip_code" id="zip_code" maxlength="25" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<label for="country">Country</label><br />
+						<select name="country_code" id="country" >
+							<!-- BEGIN: COUNTRIES -->
+							<option value="{COUNTRY_CODE}" {SELECTED}>{COUNTRY}</option>
+							<!-- END: COUNTRIES -->
+						</select>
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="phone">Phone</label><br />
+						<input type="text" name="phone" id="phone" maxlength="50" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="email">Email*</label><br />
+					<input type="text" name="email_address" id="email" maxlength="80" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" id="thanks">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="4" id="thanks">&nbsp;</td>
+			</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0" id="tbl_guests">
+			<tr class="section">
+				<td colspan="3" id="guest_header">
+					Details of your guests – if purchasing multiple tickets, we appreciate your help in providing the following:
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<span class="guest_count">1.</span> <label for="guest_last_name_1">Last Name</label><br />
+						<input type="text" name="guest_last_name[]" id="guest_last_name_1" />
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="guest_last_name_1">First Name</label><br />
+						<input type="text" name="guest_first_name[]" id="guest_first_name_1" />
+					</div>
+				</td>
+				<td>
+					<label for="guest_middle_initial_1">Middle initial</label><br />
+					<input type="text" name="guest_middle_initial[]" id="guest_middle_initial_1" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<label for="guest_class_1">Class of (incl. school if not NDJ)</label><br />
+						<input type="text" name="guest_custom_fields[]" id="guest_class_1" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="guest_email_1">Email address</label><br />
+					<input type="text" name="guest_email[]" id="guest_email_1" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<span class="guest_count">2.</span> <label for="guest_last_name_2">Last Name</label><br />
+						<input type="text" name="guest_last_name[]" id="guest_last_name_2" />
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="guest_last_name_2">First Name</label><br />
+						<input type="text" name="guest_first_name[]" id="guest_first_name_2" />
+					</div>
+				</td>
+				<td>
+					<label for="guest_middle_initial_2">Middle initial</label><br />
+					<input type="text" name="guest_middle_initial[]" id="guest_middle_initial_2" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<label for="guest_class_2">Class of (incl. school if not NDJ)</label><br />
+						<input type="text" name="guest_custom_fields[]" id="guest_class_2" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="guest_email_2">Email address</label><br />
+					<input type="text" name="guest_email[]" id="guest_email_2" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<span class="guest_count">3.</span> <label for="guest_last_name_3">Last Name</label><br />
+						<input type="text" name="guest_last_name[]" id="guest_last_name_3" />
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="guest_last_name_3">First Name</label><br />
+						<input type="text" name="guest_first_name[]" id="guest_first_name_3" />
+					</div>
+				</td>
+				<td>
+					<label for="guest_middle_initial_3">Middle initial</label><br />
+					<input type="text" name="guest_middle_initial[]" id="guest_middle_initial_3" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<label for="guest_class_3">Class of (incl. school if not NDJ)</label><br />
+						<input type="text" name="guest_custom_fields[]" id="guest_class_3" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="guest_email_3">Email address</label><br />
+					<input type="text" name="guest_email[]" id="guest_email_3" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<span class="guest_count">4.</span> <label for="guest_last_name_4">Last Name</label><br />
+						<input type="text" name="guest_last_name[]" id="guest_last_name_4" />
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="guest_last_name_4">First Name</label><br />
+						<input type="text" name="guest_first_name[]" id="guest_first_name_4" />
+					</div>
+				</td>
+				<td>
+					<label for="guest_middle_initial_4">Middle initial</label><br />
+					<input type="text" name="guest_middle_initial[]" id="guest_middle_initial_4" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<label for="guest_class_4">Class of (incl. school if not NDJ)</label><br />
+						<input type="text" name="guest_custom_fields[]" id="guest_class_4" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="guest_email_4">Email address</label><br />
+					<input type="text" name="guest_email[]" id="guest_email_4" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<span class="guest_count">5.</span> <label for="guest_last_name_5">Last Name</label><br />
+						<input type="text" name="guest_last_name[]" id="guest_last_name_5" />
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="guest_last_name_5">First Name</label><br />
+						<input type="text" name="guest_first_name[]" id="guest_first_name_5" />
+					</div>
+				</td>
+				<td>
+					<label for="guest_middle_initial_5">Middle initial</label><br />
+					<input type="text" name="guest_middle_initial[]" id="guest_middle_initial_5" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<label for="guest_class_5">Class of (incl. school if not NDJ)</label><br />
+						<input type="text" name="guest_custom_fields[]" id="guest_class_5" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="guest_email_5">Email address</label><br />
+					<input type="text" name="guest_email[]" id="guest_email_5" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<span class="guest_count">6.</span> <label for="guest_last_name_6">Last Name</label><br />
+						<input type="text" name="guest_last_name[]" id="guest_last_name_6" />
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="guest_last_name_6">First Name</label><br />
+						<input type="text" name="guest_first_name[]" id="guest_first_name_6" />
+					</div>
+				</td>
+				<td>
+					<label for="guest_middle_initial_6">Middle initial</label><br />
+					<input type="text" name="guest_middle_initial[]" id="guest_middle_initial_6" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<label for="guest_class_6">Class of (incl. school if not NDJ)</label><br />
+						<input type="text" name="guest_custom_fields[]" id="guest_class_6" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="guest_email_6">Email address</label><br />
+					<input type="text" name="guest_email[]" id="guest_email_6" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<span class="guest_count">7.</span> <label for="guest_last_name_7">Last Name</label><br />
+						<input type="text" name="guest_last_name[]" id="guest_last_name_7" />
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="guest_last_name_7">First Name</label><br />
+						<input type="text" name="guest_first_name[]" id="guest_first_name_7" />
+					</div>
+				</td>
+				<td>
+					<label for="guest_middle_initial_7">Middle initial</label><br />
+					<input type="text" name="guest_middle_initial[]" id="guest_middle_initial_7" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<label for="guest_class_7">Class of (incl. school if not NDJ)</label><br />
+						<input type="text" name="guest_custom_fields[]" id="guest_class_7" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="guest_email_7">Email address</label><br />
+					<input type="text" name="guest_email[]" id="guest_email_7" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<span class="guest_count">8.</span> <label for="guest_last_name_8">Last Name</label><br />
+						<input type="text" name="guest_last_name[]" id="guest_last_name_8" />
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="guest_last_name_8">First Name</label><br />
+						<input type="text" name="guest_first_name[]" id="guest_first_name_8" />
+					</div>
+				</td>
+				<td>
+					<label for="guest_middle_initial_8">Middle initial</label><br />
+					<input type="text" name="guest_middle_initial[]" id="guest_middle_initial_8" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<label for="guest_class_8">Class of (incl. school if not NDJ)</label><br />
+						<input type="text" name="guest_custom_fields[]" id="guest_class_8" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="guest_email_8">Email address</label><br />
+					<input type="text" name="guest_email[]" id="guest_email_8" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<span class="guest_count">9.</span> <label for="guest_last_name_9">Last Name</label><br />
+						<input type="text" name="guest_last_name[]" id="guest_last_name_9" />
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="guest_last_name_9">First Name</label><br />
+						<input type="text" name="guest_first_name[]" id="guest_first_name_9" />
+					</div>
+				</td>
+				<td>
+					<label for="guest_middle_initial_9">Middle initial</label><br />
+					<input type="text" name="guest_middle_initial[]" id="guest_middle_initial_9" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<label for="guest_class_9">Class of (incl. school if not NDJ)</label><br />
+						<input type="text" name="guest_custom_fields[]" id="guest_class_9" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="guest_email_9">Email address</label><br />
+					<input type="text" name="guest_email[]" id="guest_email_9" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<span class="guest_count">10.</span> <label for="guest_last_name_10">Last Name</label><br />
+						<input type="text" name="guest_last_name[]" id="guest_last_name_10" />
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="guest_last_name_10">First Name</label><br />
+						<input type="text" name="guest_first_name[]" id="guest_first_name_10" />
+					</div>
+				</td>
+				<td>
+					<label for="guest_middle_initial_10">Middle initial</label><br />
+					<input type="text" name="guest_middle_initial[]" id="guest_middle_initial_10" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<label for="guest_class_10">Class of (incl. school if not NDJ)</label><br />
+						<input type="text" name="guest_custom_fields[]" id="guest_class_10" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="guest_email_10">Email address</label><br />
+					<input type="text" name="guest_email[]" id="guest_email_10" />
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+</form>
+<br class="clear" />
+<!-- END: MAIN -->
+<!-- BEGIN: CONFIRMATION_PAYPAL -->
+<div id="confirmation">
+	Thank you for your contribution.<br /><br />
+	A confirmation email will follow via email shortly.
+</div>
+<!-- END: CONFIRMATION_PAYPAL -->
+<!-- BEGIN: CONFIRMATION_CHECK -->
+<div id="confirmation">
+	Thank you for your purchase of (${TOTAL}) by check.<br /><br />
+	Please send the check to<br /><br />
+	Jamhour Alumni U.S., Inc.<br />
+	c/o Adtek<br />
+	500 Fifth Avenue, Suite 2110<br />
+	New York, NY 10110
+</div>
+<!-- END: CONFIRMATION_CHECK -->
+<!-- BEGIN: PAYPAL_REDIR -->
+<script type="text/javascript" src="{SCRIPT_PATH}dojo.js"></script>
+<script type="text/javascript" >
+	dojo.addOnLoad(function(){
+		dojo.byId('redir').submit();
+	})
+</script>
+You are now being redirected to PayPal, thank you for choosing to purchase tickets from Jamhour US.
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="redir">
+	<input type="hidden" name="cmd" value=" _cart">
+	<input type="hidden" name="upload" value="1">
+	<input type="hidden" name="business" value="jamhouralumnius@gmail.com" />
+	<!-- BEGIN: INDIVIDUAL_TICKET -->
+	<input type="hidden" name="item_name_{ITEM_I}" value="Jamhour Alumni and Friends Ticket">
+	<input type="hidden" name="amount_{ITEM_I}" value="250.00">
+	<input type="hidden" name="quantity_{ITEM_I}" value="{REGULAR_TIX_COUNT}">
+	<!-- END: INDIVIDUAL_TICKET -->
+	<!-- BEGIN: SENIOR_TICKET -->
+	<input type="hidden" name="item_name_{ITEM_I}" value="Jamhour Alumni 2005-2015  Ticket">
+	<input type="hidden" name="amount_{ITEM_I}" value="150.00">
+	<input type="hidden" name="quantity_{ITEM_I}" value="{SENIOR_TIX_COUNT}">
+	<!-- END: SENIOR_TICKET -->
+	<!-- BEGIN: STUDENT_TICKET -->
+	<input type="hidden" name="item_name_{ITEM_I}" value="Student Ticket">
+	<input type="hidden" name="amount_{ITEM_I}" value="75.00">
+	<input type="hidden" name="quantity_{ITEM_I}" value="{STUDENT_TIX_COUNT}">
+	<!-- BEGIN: STUDENT_TICKET -->
+</form>
+<!-- END: PAYPAL_REDIR -->

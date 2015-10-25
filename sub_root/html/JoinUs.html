@@ -1,0 +1,123 @@
+<!-- BEGIN: MAIN -->
+<div id="error_holder">
+	{ERROR_MESSAGE}
+</div>
+<div id="join_right">
+	<form action="/JoinUs/Process/" method="post" id="frm_join_us" >
+		<table cellpadding="0" cellspacing="0">
+			<tr class="section">
+				<td colspan="3">
+					Your details
+					<br />
+				</td>
+			</tr>
+			<tr>
+				<td class="col_1">
+					<div>
+						<label for="last_name">Last name*</label><br />
+						<input type="text" name="last_name" id="last_name" maxlength="50" class="required" />
+					</div>
+				</td>
+				<td class="col_2">
+					<div>
+						<label for="first_name">First name*</label><br />
+						<input type="text" name="first_name" id="first_name" maxlength="50" class="required" />
+					</div>
+				</td>
+				<td>
+					<label for="middle_initial">Middle initial</label><br />
+					<input type="text" name="middle_name" id="middle_initial" maxlength="1" />
+				</td>
+			</tr>
+			<tr>
+				<td class="col_1">
+					<div>
+						<label for="class">Class of (incl. school if not NDJ)</label><br />
+						<input type="text" name="custom_fields[2]" id="class" maxlength="50" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="organization">Organization (if applicable)</label><br />
+					<input type="text" name="company_name" id="organization" maxlength="50" />
+				</td>
+			</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2">
+					<label for="address">Address*</label>
+				</td>
+				<td>
+					Please specify: <label for="home">Home</label>
+					<input type="radio" name="residence" value="0" id="home" checked="checked" />
+				</td>
+				<td>
+					<label for="office">Office</label>
+					<input type="radio" name="residence" value="1" id="office" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<input type="text" name="address_line_1" id="address" maxlength="50" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div>
+						<label for="city">City*</label><br />
+						<input type="text" name="city_name" id="city" maxlength="50" class="required" />
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="state">State*</label><br />
+						<input type="text" name="state_code" id="state" maxlength="2" class="required" />
+					</div>
+				</td>
+				<td>
+					<label for="zip">Zip*</label><br />
+					<input type="text" name="zip_code" id="zip_code" maxlength="25" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<label for="country">Country</label><br />
+						<select name="country_code" id="country">
+							<!-- BEGIN: COUNTRIES -->
+							<option value="{COUNTRY_CODE}" {SELECTED}>{COUNTRY}</option>
+							<!-- END: COUNTRIES -->
+						</select>
+					</div>
+				</td>
+				<td>
+					<div>
+						<label for="phone">Phone</label><br />
+						<input type="text" name="phone" id="phone" maxlength="50" />
+					</div>
+				</td>
+				<td colspan="2">
+					<label for="email">Email*</label><br />
+					<input type="text" name="email_address" id="email" maxlength="80" class="required" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" id="thanks">&nbsp;</td>
+			</tr>
+			<tr class="section">
+				<td colspan="4" id="thanks">
+					<br />
+					
+					<input type="image" src="{IMAGE_PATH}button_join_us.gif" alt="Join Us" title="Join Us" id="join" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+<br class="clear" />
+<!-- END: MAIN -->
+<!-- BEGIN: CONFIRMATION -->
+<div id="confirmation">
+	Thank you for joining Jamhour US
+</div>
+<!-- END: CONFIRMATION -->
